@@ -32,13 +32,13 @@ useGSAP(() => {
 
   return (
     <nav>
-        <div >
+        <div className=''>
           
-            <a href="#home" className='flex items-center gap-2'>
+            <a href="#home" className='flex items-center gap-2 mx-7'>
               <img src="/images/logo.png" alt="" />
                 <p>Vintage Inn</p>
             </a>
-            <ul>
+            <ul className='mx-7'>
               {navLinks.map((nav) => (
                 <li key={nav.name}>
                   <a href={nav.link}>{nav.name}</a>
