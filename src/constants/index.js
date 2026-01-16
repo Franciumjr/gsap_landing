@@ -63,5 +63,17 @@ const mockTailLists = [
  },
 ];
 
+const features = [
+	"Reclaimed Wood Accents",
+	"Warm Amber Lighting",
+	"Artisanal Heritage Linens",
+]
 
-export { navLinks , cocktailLists, mockTailLists};
+const goods = [
+	"Scenic Riverfront Vistas",
+	"Historic Heritage Walkway",
+	"Riverside Golden Hour",
+]
+
+
+export { navLinks , cocktailLists, mockTailLists, features, goods};

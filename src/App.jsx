@@ -5,6 +5,7 @@ import Rooms from './components/Rooms.jsx'
 import gsap from 'gsap';
 import { ScrollTrigger, SplitText } from 'gsap/all';
 import About from "./components/About.jsx"
+import Art from './components/Art.jsx';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -15,6 +16,7 @@ const App = () => {
       <Hero></Hero>
       <Rooms></Rooms>
       <About></About>
+      <Art></Art>
     </main>
   )
 }
