@@ -24,7 +24,7 @@ const Hero = () => {
     gsap.from(titleSplit.chars, { // from individual characters animate
       yPercent: 100,
       stagger: 0.05,
-      duration: .5,
+      duration: 1,
       opacity: 0,
       ease: "expo.out",
     })
