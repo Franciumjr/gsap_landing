@@ -32,10 +32,10 @@ const Art = () => {
       duration: 2,
       ease: 'power3.inOut',
     })
-    .to(".masked-content", {
+    .to("#masked-content", {
       opacity: 1,
       duration: 1,
-      ease: 'power3.inOut'
+      ease: 'power3.inOut',
     })
   }, [])
 
@@ -68,9 +68,9 @@ const Art = () => {
             }
           </ul>
         </div>
-        <div className="masked-container">
+        <div className="masked-container ">
           <h2 className="will-fade">Vintage-like Experience</h2>
-          <div className="masked-content">
+          <div id="masked-content">
             <h3>Made with Craft, Poured with Passion</h3>
             <p>Not just a Hotel. Rather an Experience.</p>
           </div>
