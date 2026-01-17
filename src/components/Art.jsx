@@ -42,7 +42,7 @@ const Art = () => {
   return (
     <section id='art'>
       <div className="container mx-auto h-full pt-20 ">
-        <h2 className='will-fade'>A closer look of our Rooms</h2>
+        <h2 className='will-fade'>The LOBBY</h2>
         <div className="content">
           <ul className='space-y-4 will-fade'>
             {features.map((feature, index) => (

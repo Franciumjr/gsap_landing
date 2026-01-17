@@ -95,9 +95,9 @@ const Hero = () => {
             </div>
             <div className="view-cocktails">
               <p className='subtitle'>
-                Vintage Inn is a budget hotel that offers single and double rooms at half the price of 4 star hotels.
+                Vintage Inn is a budget hotel that offers single and double rooms at half the price of Luxury hotels.
               </p>
-              <a href="#cocktails">View Rooms</a>
+              <a className='bg-amber-700 hover:bg-amber-950 duration-200 rounded-full px-5 py-3' href="#cocktails">BOOK NOW</a>
             </div>
           </div>
         </div>
