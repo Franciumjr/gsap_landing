@@ -11,55 +11,51 @@ const navLinks = [{
 
 const cocktailLists = [
  {
-	name: "Chapel Hill Shiraz",
-	country: "AU",
-	detail: "Battle",
-	price: "$10",
+	name: "Queen Room",
+	detail: "1 large double bed",
+	
  },
  {
-	name: "Caten Malbee",
-	country: "AU",
-	detail: "Battle",
-	price: "$49",
+	name: "Standard Queen Room",
+	detail: "1 large double bed",
+	
  },
  {
-	name: "Rhino Pale Ale",
-	country: "CA",
-	detail: "750 ml",
-	price: "$20",
+	name: "Deluxe Room",
+	detail: "1 large double bed",
+	
  },
  {
-	name: "Irish Guinness",
-	country: "IE",
-	detail: "600 ml",
-	price: "$29",
+	name: "Small Single Room",
+	detail: "1 single bed",
+	
  },
 ];
 
 const mockTailLists = [
  {
-	name: "Tropical Bloom",
+	name: "Christ Church & Stadthuys,",
 	country: "US",
 	detail: "Battle",
-	price: "$10",
+	price: "1000m",
  },
  {
-	name: "Passionfruit Mint",
+	name: "Baba Nyonya Heritage Museum",
 	country: "US",
 	detail: "Battle",
-	price: "$49",
+	price: "1400m",
  },
  {
-	name: "Citrus Glow",
+	name: "Jonker Street",
 	country: "CA",
 	detail: "750 ml",
-	price: "$20",
+	price: "600m",
  },
  {
-	name: "Lavender Fizz",
+	name: "Melaka River",
 	country: "IE",
 	detail: "600 ml",
-	price: "$29",
+	price: "150m",
  },
 ];
 

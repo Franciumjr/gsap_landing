@@ -34,13 +34,13 @@ return (
                     <div className="popular">
                             <h2>Our top selling rooms: </h2>
                             <ul>
-                                {cocktailLists.map(({name, country, detail, price}) => {
+                                {cocktailLists.map(({name, detail, price}) => {
                                     // Render each room as a list item
                                     return (
                                         <li key={name}>
                                             <div className='md:me-28'>
                                                 <h3>{name}</h3>
-                                                <p>{country} | {detail}</p>
+                                                <p>{detail}</p>
                                             </div>
                                             <span> - {price}</span>
                                         </li>

@@ -37,7 +37,7 @@ const About = () => {
             <div className="content">
                 <div className="md:col-span-8">
                     <p className='badge'>Near-Perfect Rooms</p>
-                    <h2>Your stay matters <span className='text-white'>-</span>from the room all the way to the toilet .</h2>
+                    <h2>Your stay matters <span className='text-white'>-</span>from the room all the way to the toilet</h2>
                     
                 </div>
                 <div className="sub-content">
