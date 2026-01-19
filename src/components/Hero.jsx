@@ -82,22 +82,22 @@ const Hero = () => {
   return (
     <>
       <section id="hero" className='noisy'>
-        <h1 className='title'>VINTAGE INN </h1>
+        <h1 className='title '>VINTAGE INN </h1>
         <img src="/images/hero-left-leaf.png" className='left-leaf'  alt="left-leaf" />
         <img src="/images/hero-right-leaf.png" className='right-leaf'  alt="right-leaf" />
         <div className="body">
           <div className="content">
-            <div className="space-y-5 hidden md:block">
+            <div className="space-y-5 hidden lg:block">
               <p>Vintage. Budget. Convenience.</p>
               <p className='subtitle'>Malacca's most 
                 <br />Affordable hotel
               </p>
             </div>
-            <div className="view-cocktails">
+            <div className="view-cocktails ">
               <p className='subtitle'>
                 Vintage Inn is a budget hotel that offers single and double rooms at half the price of Luxury hotels.
               </p>
-              <a className='bg-amber-700 hover:bg-amber-950 duration-200 rounded-full px-5 py-3' href="#cocktails">BOOK NOW</a>
+              <a className='bg-amber-700 hover:bg-amber-950 duration-200 rounded-full px-5 py-3' href="https://www.agoda.com/victors-guest-house/hotel/malacca-my.html?cid=1844104&ds=evnMjse4rrBSyvLF">BOOK NOW</a>
             </div>
           </div>
         </div>

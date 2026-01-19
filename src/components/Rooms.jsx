@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { cocktailLists, mockTailLists } from '../constants'
@@ -50,7 +50,7 @@ return (
                     </div>
 
                     <div className="loved">
-                            <h2>Tourist attractions </h2>
+                            <h2>Tourist attraction sites </h2>
                             <ul>
                                 {mockTailLists.map(({name, country, detail, price}) => {
                                     // Render each room as a list item

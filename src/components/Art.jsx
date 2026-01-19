@@ -55,7 +55,7 @@ const Art = () => {
             }
           </ul>
           <div className="cocktail-img">
-            <img src="/images/under-img.jpg" className='abs-center masked-img size-full object-contain' alt="" />
+            <img src="/images/lobby.jpg" className='abs-center masked-img size-full object-contain' alt="" />
           </div>
           <ul className='space-y-4 will-fade'>
             {goods.map((good, index) => (
