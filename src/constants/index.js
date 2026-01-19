@@ -97,6 +97,36 @@ const rooms = [
 		title: "Queen sized bed with their private bathroom",
 	}
 ]
+const openingHours = [
+	{	
+		title: "Sun - Sat",
+		time: "10am - 10pm",
+	},
+	{
+		title: "Check In",
+		time: "3pm"
+	},
+	{
+		title: "Check Out",
+		time: "12pm",
+	},
+]
+const socials = [
+ {
+	name: "Instagram",
+	icon: "/images/insta.png",
+	url: "#",
+ },
+ {
+	name: "X (Twitter)",
+	icon: "/images/x.png",
+	url: "#",
+ },
+ {
+	name: "Facebook",
+	icon: "/images/fb.png",
+	url: "#",
+ },
+];
 
-
-export { navLinks , cocktailLists, mockTailLists, features, goods, rooms};
+export { navLinks , cocktailLists, mockTailLists, features, goods, rooms, openingHours, socials};

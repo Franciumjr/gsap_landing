@@ -41,8 +41,8 @@ const Showcase = () => {
       {
         scrollTrigger: {
             trigger: "#menu",
-            start: "top 50%",
-            end: "bottom 80%",
+            start: "top top",
+            end: "bottom bottom%",
             scrub: true,
         }
     })
@@ -50,13 +50,12 @@ const Showcase = () => {
     .from("#m-left-leaf", {
         x: -100, 
         y: 100,
-        duration: 1,
+        
     })
     .from("#m-right-leaf", {
         x: 100, 
         y: 100,
-        duration:1,
-        ease: 'power1.inOut',
+       
     })
 
 

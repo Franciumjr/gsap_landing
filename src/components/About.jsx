@@ -45,7 +45,7 @@ const About = () => {
                     <div>
                         <p className='md:text-3xl text-xl font-bold'><span>4.0</span>/5</p>
                     </div>
-                    <p className='text-sm text-white-100'>More than 100+ customers</p>
+                    <p className='text-sm text-white-100'>More than 150+ customers</p>
                 </div>
             </div>
         </div>
