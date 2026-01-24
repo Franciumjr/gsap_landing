@@ -8,6 +8,8 @@ import About from "./components/About.jsx"
 import Art from './components/Art.jsx';
 import Showcase from './components/Showcase.jsx';
 import Contact from './components/Contact.jsx';
+
+
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {

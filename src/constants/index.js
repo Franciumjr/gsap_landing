@@ -34,7 +34,7 @@ const cocktailLists = [
 
 const mockTailLists = [
  {
-	name: "Christ Church & Stadthuys,",
+	name: "Christ Church & Stadthuys",
 	country: "US",
 	detail: "Battle",
 	price: "1000m",

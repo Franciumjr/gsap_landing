@@ -1,15 +1,20 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { SplitText } from 'gsap/all';
+import HeroExperience from './Hero3D/HeroExperience';
+import { Canvas } from "@react-three/fiber";
 
 import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
 
+  const mainRef = useRef(null)
+  const sceneRef = useRef(null)
+
   const videoRef = useRef();
   const isMobile = useMediaQuery({maxWidth: 767});
-
+  const [progress, Setprogress] = useState(0) 
 
   useGSAP(() => {
 
@@ -37,7 +42,32 @@ const Hero = () => {
       delay: 1,
       ease: "expo.out",
     })
+    gsap.to(".model-container" , {
+      opacity: 1, 
+      delay: 1.5,
+      ease: "expo.out",
+      duration: 1,
+    })
 
+    gsap.timeline({
+      
+
+
+      scrollTrigger: {
+        trigger: '#hero',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true, 
+      }
+      })
+
+      
+
+    .to('.right-leaf', { y:200 }, 0)
+    .to ('.left-leaf', { y:-200 }, 0)
+  
+    // declare the start and end value for the video animation
+    
     gsap.timeline({
       
 
@@ -75,14 +105,36 @@ const Hero = () => {
       });
     };
     
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: mainRef.current,
+        start: "top top",
+        end: 'bottom bottom ',
+        scrub: .5,
+        onUpdate: (self) => {
+          Setprogress(self.progress)
+        }
+      }
+    })
     
+    .to(sceneRef.current, {
+      y: "100vh",
+      ease: 'none',
+    })
      // 120% top: top of the screen is 120% away, bottom top: bottom of the component  is at the top
       
   }, []);
   return (
     <>
-      <section id="hero" className='noisy'>
+      
+      <section ref={mainRef} id="hero" className='noisy'>
+        <div ref={sceneRef} className="model-container z-20">
+          <Canvas  style={{  position: 'fixed', zIndex: 20, top: isMobile ? '10rem' : '10vh', left: isMobile?  '50vw' : '55vw', transform: 'translateX(-50%)', width: isMobile ? '6rem' : '40vw', height: isMobile ? '6rem' : '80vh' }}>
+            <HeroExperience progress = {progress}></HeroExperience>
+          </Canvas>
+        </div>
         <h1 className='title '>VINTAGE INN </h1>
+        
         <img src="/images/hero-left-leaf.png" className='left-leaf'  alt="left-leaf" />
         <img src="/images/hero-right-leaf.png" className='right-leaf'  alt="right-leaf" />
         <div className="body">
@@ -90,18 +142,21 @@ const Hero = () => {
             <div className="space-y-5 hidden lg:block">
               <p>Vintage. Budget. Convenience.</p>
               <p className='subtitle'>Malacca's most 
-                <br />Affordable hotel
+                Affordable hotel
               </p>
+
             </div>
+            
             <div className="view-cocktails ">
               <p className='subtitle'>
                 Vintage Inn is a budget hotel that offers single and double rooms at half the price of Luxury hotels.
               </p>
+              
               <a className='bg-amber-700 hover:bg-amber-950 duration-200 rounded-full px-5 py-3' href="https://www.agoda.com/victors-guest-house/hotel/malacca-my.html?cid=1844104&ds=evnMjse4rrBSyvLF">BOOK NOW</a>
             </div>
           </div>
         </div>
-      
+        
       </section>
       <div className='video absolute inset-0'>
         
